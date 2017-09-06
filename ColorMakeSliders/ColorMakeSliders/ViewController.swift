@@ -10,18 +10,6 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    enum Color: Int {
-        case red = 0
-        case green
-        case blue
-    }
-    
-    struct RGB {
-        var redColor: CGFloat = 0.0
-        var greenColor: CGFloat = 0.0
-        var blueColor: CGFloat = 0.0
-    }
-    
     @IBOutlet weak var redSlider: UISlider!
     @IBOutlet weak var greenSlider: UISlider!
     @IBOutlet weak var blueSlider: UISlider!
@@ -59,5 +47,23 @@ class ViewController: UIViewController {
     }
     
 
+}
+
+extension ViewController {
+    // MARK: - Color enum
+    
+    enum Color: Int {
+        case red = 0
+        case green
+        case blue
+    }
+    
+    // MARK: - RGB struct
+    
+    struct RGB {
+        var redColor: CGFloat = 0.0
+        var greenColor: CGFloat = 0.0
+        var blueColor: CGFloat = 0.0
+    }
 }
 
